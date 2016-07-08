@@ -67,7 +67,6 @@ def jpg2gif(filename):
     	print 'down'
 
 
-
 if __name__=='__main__':
     imglist = gif2img('b.gif')
     txtlist=[]
