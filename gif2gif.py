@@ -11,7 +11,7 @@ def gif2img(filename):
     mypalette = im.getpalette()
     i = 0
     try:
-        imglist=[]
+        imglist = []
         while 1:
             im.putpalette(mypalette)
             new_im = Image.new("RGBA", im.size)
@@ -51,7 +51,7 @@ def txt2img(filename):
     f = open(filename)
     text = f.read()
     f.close()
-    draw.text((0,0),text, fill=(0,0,0))  
+    draw.text((0,0),text, fill = (0,0,0))  
     im.save(filename[:-3]+'jpg')
     return filename[:-3]+'jpg'
 
@@ -69,8 +69,8 @@ def jpg2gif(filename):
 
 if __name__=='__main__':
     imglist = gif2img('b.gif')
-    txtlist=[]
-    jpglist=[]
+    txtlist = []
+    jpglist = []
     for img in imglist:
         im = Image.open(img)
         im = im.resize((WIDTH,HEIGHT), Image.NEAREST)
