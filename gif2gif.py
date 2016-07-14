@@ -2,7 +2,7 @@ from PIL import Image,ImageEnhance,ImageDraw
 from images2gif import writeGif
 
 
-WIDTH, HEIGHT= 40, 40
+WIDTH, HEIGHT = 40, 40
 char = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. ")
 
 
